@@ -5,4 +5,5 @@ const allow = (e) => {
 
 document.addEventListener('paste', allow, true);
 document.addEventListener('contextmenu', allow, true);
-document.getElementById('AuthenticationFG.ACCESS_CODE').removeAttribute('autocomplete');
+document.getElementById('AuthenticationFG.ACCESS_CODE')
+    .setAttribute('autocomplete', 'current-password');
